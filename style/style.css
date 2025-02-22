@@ -1,0 +1,108 @@
+/*IMPORTS*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400..700&display=swap');
+
+/*ROOT SETTING STYLES*/
+:root {
+  --primary-color: #F5F5F5;
+  --secondary-color:#F8E7F6;
+  --tertiary-color: #DD88CF;
+  --accent1-color: #FBF3B9;
+  --accent2-color: #A3333D;
+
+  --heading-font: "Bebas Neue";
+  --paragraph-font: Caveat, Helvetica, sans-serif;
+
+  --nav-link-color:#141B41;
+  --nav-hover-color:#477998;
+  --nav-hover-background-color:#C7E8F3;
+  --headline-background-color:#A3333D;
+  --paragraph-text-color:black;
+  --paragraph-background-color:#F64740;
+
+}
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+  }
+  
+  .header {
+    background-color: #f1f1f1;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .column {
+    float: left;
+    height: 500px;
+    width: 50%;
+    border: solid black 2px;
+    padding: 20px;
+    margin-top:10px;
+    box-shadow: 10px 10px 5px #888888;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    color:#333;
+  }
+  
+  .row::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+  @media screen and (max-width:600px) {
+    .column {
+      width: 100%;
+    }
+  }
+
+  .sneak_peak a{
+    text-decoration: none;
+  }
+  .sneak_peak p{
+    font-size: large;
+    text-align: center;
+  }
+  .link_box{
+    position: absolute;
+    margin:0%;
+    bottom:0px;
+    padding-top:1%;
+    padding-bottom:1%;
+    padding-left: 50%;
+    padding-right: 50%;
+    background-color: grey;
+    opacity: .7;
+  }
+  .link_box:hover{
+    opacity: .9;
+  }
+  
+  footer{
+    text-align: center;
+  }
