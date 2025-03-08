@@ -73,6 +73,14 @@
     display: table;
     clear: both;
   }
+
+  #grid-main{
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .content{
+    grid-column: 2/3;
+    background-color: var(--primary-color);
+  }
   
   /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
   @media screen and (max-width:600px) {
