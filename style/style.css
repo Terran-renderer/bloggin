@@ -96,7 +96,7 @@
   
   #output {
     max-width: 100%; /* Keeps it inside its parent */
-    height: 400px; /* Adjust as needed */
+    height: 100%; /* Adjust as needed */
     overflow: auto; /* Scrolls if needed */
     word-wrap: break-word;
     white-space: normal; /* Prevents preformatted spacing issues */
