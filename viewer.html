@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Viewer</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .content { border: 1px solid #ddd; padding: 10px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+
+    <h1>Document Viewer</h1>
+    <a href="idek.html">← Back to Archive</a>
+    <div class="content">
+        <h2>Content</h2>
+        <pre id="output">Loading...</pre>
+    </div>
+
+    <script>
+        // Get JSON URL from query parameter
+        const urlParams = new URLSearchParams(window.location.search);
+        const jsonUrl = urlParams.get("url");
+
+        if (jsonUrl) {
+            fetch(jsonUrl)
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById("output").textContent;
+                })
+                .catch(error => document.getElementById("output").textContent = "Error loading document.");
+        } else {
+            document.getElementById("output").textContent = "No document selected.";
+        }
+    </script>
+
+</body>
+</html>

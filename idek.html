@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archive</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .link-list a { display: block; margin: 5px 0; cursor: pointer; color: blue; text-decoration: underline; }
+    </style>
+</head>
+<body>
+
+    <h1>Archive of Documents</h1>
+    <div class="link-list" id="linkList"></div>
+
+    <script>
+        // Example list of deployed JSON links
+        const archiveLinks = [
+            { title: "Document 1", url: 'https://script.google.com/macros/s/AKfycbxXQxW-KKVGqSZR03ooceSXYWNG3orGOR0thQ3YIbCa5ihSv9MjzQbfvXVEPEJS_ZNtLQ/exec' },
+            { title: "Document 2", url: "https://example.com/json2" }
+        ];
+
+        const linkList = document.getElementById("linkList");
+
+        // Generate clickable links
+        archiveLinks.forEach(doc => {
+            const link = document.createElement("a");
+            link.textContent = doc.title;
+            link.href = `viewer.html?url=${encodeURIComponent(doc.url)}`; // Pass URL as query parameter
+            linkList.appendChild(link);
+        });
+    </script>
+
+</body>
+</html>

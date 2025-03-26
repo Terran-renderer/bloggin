@@ -1,0 +1,65 @@
+/*IMPORTS*/
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Caveat:wght@400..700&display=swap');
+
+/*ROOT SETTING STYLES*/
+:root {
+  --primary-color: #477998;
+  --secondary-color:#C7E8F3;
+  --tertiary-color: #141B41;
+  --accent1-color: #F64740;
+  --accent2-color: #A3333D;
+
+  --heading-font: "Bebas Neue";
+  --paragraph-font: Caveat, Helvetica, sans-serif;
+
+  --base-text-color:white;
+  --headline-color-on-white: #477998; 
+  --headline-color-on-color: #C7E8F3; 
+  --paragraph-color-on-white: #477998; 
+  --paragraph-color-on-color: #C7E8F3; 
+  --paragraph-background-color: #477998;
+  --nav-link-color: #141B41;
+  --nav-background-color: #A3333D;
+  --nav-hover-link-color: #C7E8F3;
+  --nav-hover-background-color: #477998;
+}
+
+/*https://terran-renderer.github.io/bloggin/*/
+
+/*CONTENT*/
+.column {
+    float: center;
+    height: 500px;
+    width: 50%;
+    border: solid black 2px;
+    padding: 20px;
+    margin-top:10px;
+    box-shadow: 10px 10px 5px #888888;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    color:#333;
+  }
+
+  .sneak_peak a{
+    text-decoration: none;
+  }
+  .sneak_peak p{
+    font-size: large;
+    text-align: center;
+  }
+  .link_box{
+    position: absolute;
+    margin:0%;
+    bottom:0px;
+    padding-top:1%;
+    padding-bottom:1%;
+    padding-left: 50%;
+    padding-right: 50%;
+    background-color: grey;
+    opacity: .7;
+  }
+  .link_box:hover{
+    opacity: .9;
+  }
