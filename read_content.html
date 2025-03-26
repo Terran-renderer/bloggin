@@ -10,11 +10,12 @@
     <body>
         <script>
             fetch('https://script.google.com/macros/s/AKfycbxXQxW-KKVGqSZR03ooceSXYWNG3orGOR0thQ3YIbCa5ihSv9MjzQbfvXVEPEJS_ZNtLQ/exec')
-              .then(response => response.json())
-              .then(data => {
-                  document.getElementById('output').textContent = data.content;
-              })
-              .catch(error => console.error('Error fetching:', error));
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('output').innerText = data.content; // Uses normal text instead of preserving extra whitespace
+            })
+            .catch(error => console.error('Error fetching:', error));
+
     
             </script>
     
@@ -35,9 +36,10 @@
         <img src="img\split hearth forge png 03.png" width="300p" id="img1" alt="image for page">
         <img src="img\split nature wisdom png 02.png" width="300p" id="img2" alt="image for page">
         <div class="content">
-            <p class="text-box">
+            <p class="">
 
-             <pre id='output'></pre>   
+                <div id="output"></div>
+ 
              
             </p>
             </div>
