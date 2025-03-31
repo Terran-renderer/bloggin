@@ -3,9 +3,9 @@
 
 /*ROOT SETTING STYLES*/
 :root {
-  --primary-color: #FFFFFF;
-  --secondary-color:#E2B4BD;
-  --tertiary-color: #9B6A6C;
+  --primary-color: #8F9491;
+  --secondary-color:#F3EAF4;
+  --tertiary-color: #BCA3AC;
   --accent1-color: #93A8AC;
   --accent2-color: #424B54;
 
@@ -60,7 +60,7 @@
     border: solid black 2px;
     padding: 20px;
     margin-top:10px;
-    box-shadow: 10px 10px 5px var(--secondary-color);
+    box-shadow: 10px 10px 5px var(--tertiary-color);
     position: relative;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -89,6 +89,7 @@
     grid-column: 2 / 4;
     grid-row: 1 / 20;
     background-color: var(--secondary-color);
+    color:var(--paragraph-text-color);
     padding: 20px;
     overflow: hidden;
     max-width: 100%; /* Ensures it doesn’t expand beyond its grid column */
