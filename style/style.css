@@ -116,7 +116,7 @@
     grid-column:2/4;
     background-color: var(--secondary-color);
   }
-  .archive-boxes p{
+  .link-list a {
     border:solid 2px #141B41;
     height: 50px;
     background-color: var(--secondary-color);
