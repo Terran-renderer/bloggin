@@ -21,6 +21,25 @@
       <a href="https://terran-renderer.github.io/bloggin/read_content.html">Read</a>
       <a href="https://terran-renderer.github.io/bloggin/archive.html">Archive</a>
     </div>
+
+    <script>
+        // Example list of deployed JSON links
+        const archiveLinks = [
+            { title: "Document 1", url: 'https://script.google.com/macros/s/AKfycbxXQxW-KKVGqSZR03ooceSXYWNG3orGOR0thQ3YIbCa5ihSv9MjzQbfvXVEPEJS_ZNtLQ/exec' },
+            { title: "Document 2", url: "https://example.com/json2" }
+        ];
+
+        const linkList = document.getElementById("linkList");
+
+        // Generate clickable links
+        archiveLinks.forEach(doc => {
+            const link = document.createElement("a");
+            link.textContent = doc.title;
+            link.href = `viewer.html?url=${encodeURIComponent(doc.url)}`; // Pass URL as query parameter
+            linkList.appendChild(link);
+        });
+    </script>
+    
     <section id="archive-grid">
         <div class="archive-boxes">
             <p><a href="read-1">Read 1</a></p>
