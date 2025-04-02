@@ -106,7 +106,12 @@
     background-color: var(--secondary-color);
   }
   
-  
+  #main{
+    align-self: left;
+  }
+  #main2{
+    align-self: right;
+  }
   .text-box{
     grid-column: 2/4;
     grid-row: 1/20;
