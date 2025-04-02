@@ -117,7 +117,6 @@
     background-color: var(--secondary-color);
   }
   .link-list a {
-    display: block;
     border:solid 2px #141B41;
     height: 50px;
     background-color: var(--secondary-color);
