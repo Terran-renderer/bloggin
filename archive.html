@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<link type="text/css" rel="stylesheet" href="https://terran-renderer.github.io/bloggin/style/style.css">
+<link type="text/css" rel="stylesheet" href="style/style.css">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,13 +16,13 @@
     
     
     <div class="topnav">
-      <a href="https://terran-renderer.github.io/bloggin/index.html">Home</a>
-      <a href="https://terran-renderer.github.io/bloggin/read_content.html">Read</a>
-      <a href="https://terran-renderer.github.io/bloggin/archive.html">Archive</a>
+      <a href="index.html">Home</a>
+      <a href="read_content.html">Read</a>
+      <a href="archive.html">Archive</a>
     </div>
     <section id="archive-grid">
-        <div class="link-list" id="linkList">
-            <div class="archive-boxes">
+        <div class="link-list" >
+            <div id="linkList" class="archive-boxes">
             
             </div>
         </div>
@@ -31,7 +31,13 @@
             // Example list of deployed JSON links
             const archiveLinks = [
                 { title: "She who dances with death", url: 'https://script.google.com/macros/s/AKfycbxXQxW-KKVGqSZR03ooceSXYWNG3orGOR0thQ3YIbCa5ihSv9MjzQbfvXVEPEJS_ZNtLQ/exec' },
-                { title: "Document 2", url: "https://example.com/json2" }
+                { title: "These Links do not function", url: "https://example.com/json2" },
+                { title: "These Links do not function", url: "https://example.com/json2" },
+                { title: "These Links do not function", url: "https://example.com/json2" },
+                { title: "These Links do not function", url: "https://example.com/json2" },
+                { title: "These Links do not function", url: "https://example.com/json2" }
+
+
             ];
     
             const linkList = document.getElementById("linkList");
